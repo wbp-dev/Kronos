@@ -1,0 +1,7 @@
+{
+  "extends": "@meteorjs/eslint-config-meteor",
+  "rules": {
+    "no-use-before-define": ["warn", { "functions": false, "variables": false }],
+    "no-underscore-dangle": ["error", { "allow": ["_id"] }]
+  }
+}

@@ -1,0 +1,40 @@
+html {
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  font-family: Roboto, sans-serif;
+  background-color: #212121;
+  color: #fff;
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  max-width: 100vw;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  text-rendering: optimizeLegibility;
+}
+
+a {
+  text-decoration: none;
+}
+
+#app {
+  width: 100%;
+  height: 100%;
+}
+
+:invalid {
+  box-shadow: none;
+}
+
+:-moz-submit-invalid {
+  box-shadow: none;
+}
+
+:-moz-ui-invalid {
+  box-shadow: none;
+}

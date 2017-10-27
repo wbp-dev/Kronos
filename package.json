@@ -1,0 +1,36 @@
+{
+  "name": "kronos",
+  "private": true,
+  "scripts": {
+    "start": "meteor run",
+    "lint": "eslint .",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook",
+    "deploy": "DEPLOY_HOSTNAME=eu-west-1.galaxy.meteor.com meteor deploy wbp-kronos.eu.meteorapp.com --settings settings.json",
+    "test": "jest",
+    "test:watch": "jest --watch"
+  },
+  "dependencies": {
+    "babel-runtime": "^6.26.0",
+    "bcrypt": "^1.0.3",
+    "meteor-node-stubs": "^0.2.11",
+    "normalize.css": "^7.0.0",
+    "prop-types": "^15.5.10",
+    "react": "^16.0.0",
+    "react-dom": "^16.0.0",
+    "react-router-dom": "^4.2.2"
+  },
+  "devDependencies": {
+    "@meteorjs/eslint-config-meteor": "^1.0.5",
+    "@storybook/react": "^3.2.8",
+    "babel-eslint": "^8.0.1",
+    "eslint": "^4.10.0",
+    "eslint-config-airbnb": "^16.1.0",
+    "eslint-import-resolver-meteor": "^0.4.0",
+    "eslint-plugin-import": "^2.8.0",
+    "eslint-plugin-jsx-a11y": "^6.0.2",
+    "eslint-plugin-meteor": "^4.1.4",
+    "eslint-plugin-react": "^7.4.0",
+    "jest": "^21.2.1"
+  }
+}
