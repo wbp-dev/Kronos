@@ -19,7 +19,7 @@ const SelectButton = ({
   handleOnClick, label, value, selectedValue,
 }) => (
   <Button
-    color={selectedValue === value ? 'accent' : 'contrast'}
+    color={selectedValue === value ? 'accent' : 'default'}
     onClick={() => handleOnClick(value)}
   >
     {label}

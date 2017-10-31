@@ -53,7 +53,7 @@ Header.propTypes = propTypes;
 
 const styles = theme => ({
   logo: {
-    fill: theme.palette.common.white,
+    fill: theme.palette.text.primary,
     paddingRight: theme.spacing.unit * 2,
     fontWeight: 'light',
   },

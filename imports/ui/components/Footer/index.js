@@ -1,17 +1,29 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
-const style = {
-  width: '100%',
-  paddingBottom: 10,
-  textAlign: 'center',
-  fontWeight: 300,
-  fontSize: '.75em',
+import Typography from 'material-ui/Typography';
+import { withStyles } from 'material-ui/styles';
+
+const propTypes = {
+  classes: PropTypes.shape({
+    footerText: PropTypes.string.isRequired,
+  }).isRequired,
 };
 
-const Footer = () => (
-  <span style={style}>
+const Footer = ({ classes }) => (
+  <Typography type="caption" className={classes.footerText}>
     © { (new Date()).getFullYear() } Wer besiegt Paul?
-  </span>
+  </Typography>
 );
 
-export default Footer;
+Footer.propTypes = propTypes;
+
+const styles = theme => ({
+  footerText: {
+    width: '100%',
+    paddingBottom: theme.spacing.unit,
+    textAlign: 'center',
+  },
+});
+
+export default withStyles(styles)(Footer);
