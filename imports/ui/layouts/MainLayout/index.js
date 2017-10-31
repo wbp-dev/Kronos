@@ -11,7 +11,7 @@ const propTypes = {
 const MainLayout = ({ children }) => (
   <div style={style}>
     <Header />
-    <div style={{ flexGrow: 1, padding: 10 }}>
+    <div style={{ flexGrow: 1, padding: 8, marginTop: 64 }}>
       {children}
     </div>
     <Footer />

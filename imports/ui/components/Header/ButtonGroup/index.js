@@ -20,6 +20,7 @@ const ButtonGroup = ({ onSelect, selectedValue }) => (
     container
     justify="center"
     alignItems="center"
+    wrap="nowrap"
   >
     <SelectButton
       handleOnClick={onSelect}
