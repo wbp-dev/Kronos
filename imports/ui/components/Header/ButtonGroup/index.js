@@ -9,9 +9,7 @@ const propTypes = {
   onSelect: PropTypes.func.isRequired,
   selectedValue: PropTypes.oneOf([
     'logo',
-    'scores',
     'blackout',
-    'vergabe',
   ]).isRequired,
 };
 
@@ -31,20 +29,8 @@ const ButtonGroup = ({ onSelect, selectedValue }) => (
     <SelectButton
       handleOnClick={onSelect}
       selectedValue={selectedValue}
-      value="scores"
-      label="Scores"
-    />
-    <SelectButton
-      handleOnClick={onSelect}
-      selectedValue={selectedValue}
       value="blackout"
       label="Blackout"
-    />
-    <SelectButton
-      handleOnClick={onSelect}
-      selectedValue={selectedValue}
-      value="vergabe"
-      label="Vergabe"
     />
   </Grid>
 );
