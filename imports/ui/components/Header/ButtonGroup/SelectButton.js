@@ -12,7 +12,7 @@ const propTypes = {
 
 const SelectButton = ({ handleOnClick, label, value, selectedValue }) => (
   <Button
-    color={selectedValue === value ? 'accent' : 'default'}
+    color={selectedValue === value ? 'secondary' : 'default'}
     onClick={() => handleOnClick(value)}
   >
     {label}

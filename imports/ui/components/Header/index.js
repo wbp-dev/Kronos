@@ -26,7 +26,7 @@ const Header = ({ classes }) => (
           <Grid item xs={3}>
             <Grid container direction="row">
               <Logo className={classes.logo} />
-              <Typography type="headline">Kronos</Typography>
+              <Typography variant="headline">Kronos</Typography>
             </Grid>
           </Grid>
         </Hidden>
