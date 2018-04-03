@@ -7,19 +7,11 @@ import SelectButton from './SelectButton';
 
 const propTypes = {
   onSelect: PropTypes.func.isRequired,
-  selectedValue: PropTypes.oneOf([
-    'logo',
-    'blackout',
-  ]).isRequired,
+  selectedValue: PropTypes.oneOf(['logo', 'blackout']).isRequired,
 };
 
 const ButtonGroup = ({ onSelect, selectedValue }) => (
-  <Grid
-    container
-    justify="center"
-    alignItems="center"
-    wrap="nowrap"
-  >
+  <Grid container justify="center" alignItems="center" wrap="nowrap">
     <SelectButton
       handleOnClick={onSelect}
       selectedValue={selectedValue}
@@ -34,7 +26,6 @@ const ButtonGroup = ({ onSelect, selectedValue }) => (
     />
   </Grid>
 );
-
 
 ButtonGroup.propTypes = propTypes;
 

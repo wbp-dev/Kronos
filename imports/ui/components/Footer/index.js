@@ -12,13 +12,13 @@ const propTypes = {
 
 const Footer = ({ classes }) => (
   <Typography type="caption" className={classes.footerText}>
-    © { (new Date()).getFullYear() } Wer besiegt Paul?
+    © {new Date().getFullYear()} Wer besiegt Paul?
   </Typography>
 );
 
 Footer.propTypes = propTypes;
 
-const styles = theme => ({
+const styles = (theme) => ({
   footerText: {
     width: '100%',
     paddingBottom: theme.spacing.unit,

@@ -21,18 +21,10 @@ const propTypes = {
 const Header = ({ classes }) => (
   <AppBar>
     <Toolbar>
-      <Grid
-        container
-        direction="row"
-        justify="center"
-        alignItems="center"
-      >
+      <Grid container direction="row" justify="center" alignItems="center">
         <Hidden xsDown>
           <Grid item xs={3}>
-            <Grid
-              container
-              direction="row"
-            >
+            <Grid container direction="row">
               <Logo className={classes.logo} />
               <Typography type="headline">Kronos</Typography>
             </Grid>
@@ -51,7 +43,7 @@ const Header = ({ classes }) => (
 
 Header.propTypes = propTypes;
 
-const styles = theme => ({
+const styles = (theme) => ({
   logo: {
     fill: theme.palette.text.primary,
     paddingRight: theme.spacing.unit * 2,

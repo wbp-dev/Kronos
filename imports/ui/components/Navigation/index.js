@@ -3,10 +3,7 @@ import PropTypes from 'prop-types';
 
 import { withStyles } from 'material-ui/styles';
 import Drawer from 'material-ui/Drawer';
-import List, {
-  ListItem,
-  ListItemText,
-} from 'material-ui/List';
+import List, { ListItem, ListItemText } from 'material-ui/List';
 import Divider from 'material-ui/Divider';
 
 const propTypes = {
@@ -26,7 +23,7 @@ const Navigation = ({ classes }) => (
         <ListItemText primary="Vergabe" />
       </ListItem>
       <Divider />
-      {[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15].map(x => (
+      {[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15].map((x) => (
         <ListItem button key={x} dense>
           <ListItemText primary={`${x.toString().padStart(2, 0)}. Spiel`} />
         </ListItem>
@@ -37,7 +34,7 @@ const Navigation = ({ classes }) => (
 
 Navigation.propTypes = propTypes;
 
-const styles = theme => ({
+const styles = (theme) => ({
   drawer: {
     zIndex: theme.zIndex.appBar - 100,
   },

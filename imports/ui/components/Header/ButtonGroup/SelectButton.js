@@ -5,19 +5,12 @@ import Button from 'material-ui/Button';
 
 const propTypes = {
   handleOnClick: PropTypes.func.isRequired,
-  selectedValue: PropTypes.oneOf([
-    'logo',
-    'scores',
-    'blackout',
-    'vergabe',
-  ]).isRequired,
+  selectedValue: PropTypes.oneOf(['logo', 'scores', 'blackout', 'vergabe']).isRequired,
   label: PropTypes.string.isRequired,
   value: PropTypes.string.isRequired,
 };
 
-const SelectButton = ({
-  handleOnClick, label, value, selectedValue,
-}) => (
+const SelectButton = ({ handleOnClick, label, value, selectedValue }) => (
   <Button
     color={selectedValue === value ? 'accent' : 'default'}
     onClick={() => handleOnClick(value)}

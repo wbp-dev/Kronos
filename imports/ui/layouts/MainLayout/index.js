@@ -13,9 +13,7 @@ const MainLayout = ({ children }) => (
   <div style={style}>
     <Header />
     <Navigation />
-    <div style={{ flexGrow: 1, padding: 8, marginTop: 64 }}>
-      {children}
-    </div>
+    <div style={{ flexGrow: 1, padding: 8, marginTop: 64 }}>{children}</div>
     <Footer />
   </div>
 );
