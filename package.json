@@ -20,7 +20,7 @@
     "bcrypt": "^1.0.3",
     "just-random": "^2.0.0",
     "material-ui": "next",
-    "material-ui-icons": "^1.0.0-beta.17",
+    "material-ui-icons": "^1.0.0-beta.36",
     "meteor-node-stubs": "^0.3.3",
     "normalize.css": "^8.0.0",
     "prop-types": "^15.6.1",
@@ -28,7 +28,7 @@
     "react-dom": "^16.2.0",
     "react-router-dom": "^4.2.2",
     "simpl-schema": "^1.4.2",
-    "typeface-roboto": "^0.0.43"
+    "typeface-roboto": "^0.0.54"
   },
   "devDependencies": {
     "@babel/core": "^7.0.0-beta.42",
